@@ -1,0 +1,5 @@
+# application.yml
+spring:
+  mvc:
+    problemdetails:
+      enabled: true

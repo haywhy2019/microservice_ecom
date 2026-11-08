@@ -1,7 +1,6 @@
 package com.flint.userservice.dto;
 
 import com.flint.userservice.entity.User;
-import com.flint.userservice.enums.RoleName;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,7 +23,8 @@ public class UserResponseDto {
                 user.getFirstName(),
                 user.getLastName(),
                 user.getEmail(),
-                user.getRole() != null ? user.getRole().name() : RoleName.CUSTOMER.toString()
+                user.getRole().toString()
+
         );
     }
 }
